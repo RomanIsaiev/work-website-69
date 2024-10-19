@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Exclusive Offer</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,329 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <h1 class="header-title">Дорогие друзья,</h1>
+        <p class="header-desc">
+          В честь моего Дня Рождения я хочу сделать вам по-настоящему
+          <span>роскошное и уникальное предложение!</span>
+        </p>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="about-offer">
+        <div class="container">
+          <div class="about-offer-wrapper">
+            <h2 class="about-offer-title">Это событие</h2>
+            <p class="about-offer-text">
+              случается лишь раз в году, и в течение этих трех дней у вас будет
+              исключительная возможность стать обладателями совершенно особенных
+              лотов —
+              <span>каждое предложение доступно в единственном экземпляре</span>
+            </p>
+          </div>
+          <div class="desc-wrapper">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/about-offer/feather-1x.png 1x,
+                  ./src/img/about-offer/feather-2x.png 2x
+                " />
+              <img
+                class="desc-image"
+                src="./src/img/about-offer/feather-1x.png"
+                alt="feather"
+                width="auto"
+                height="auto"
+            /></picture>
+            <p class="desc-text">
+              Эти предложения созданы для тех, кто готов выйти на новый уровень
+              жизни, ощутить истинное совершенство и получить индивидуальное
+              внимание
+            </p>
+            <span class="desc-personal">от меня лично</span>
+          </div>
+        </div>
+      </section>
+      <section class="offers section">
+        <div class="container">
+          <h2 class="offers-title">Мои <span>праздничные лоты:</span></h2>
+          <ul class="offers-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/offers/offer-01-1x.png 1x,
+                    ./src/img/offers/offer-01-2x.png 2x
+                  " />
+                <img
+                  class="offer-image"
+                  src="./src/img/offers/offer-01-1x.png"
+                  alt="image"
+                  width="280"
+                  height="200"
+              /></picture>
+              <h3 class="offer-name">Индивидуальное обучение астрологии</h3>
+              <div class="offer-time-container">
+                <div class="time-wrapper">
+                  <p class="time">[ 6 месяцев ]</p>
+                </div>
+                <div class="time-wrapper">
+                  <p class="time">[ Zoom ]</p>
+                </div>
+              </div>
+              <p class="offer-text">
+                Это более чем курс — это трансформация. Вы станете первым
+                человеком, который будет обучаться у меня лично в формате один
+                на один. Мы вместе погрузимся в глубины астрологии, и я передам
+                вам все свои знания и практические навыки, чтобы вы смогли
+                достичь мастерства
+              </p>
+              <p class="offer-desc">
+                Полная стоимость такого обучения превышает $30,000
+              </p>
+              <div class="special-price-box">
+                <p class="special-text">Специальная цена для вас:</p>
+                <p class="special-price">$9,900</p>
+              </div>
+              <a class="buy-btn" href=""
+                >купить
+                <img src="./src/img/offers/buy-btn-arrow.svg" alt="arrow"
+              /></a>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/offers/offer-02-1x.png 1x,
+                    ./src/img/offers/offer-02-2x.png 2x
+                  " />
+                <img
+                  class="offer-image"
+                  src="./src/img/offers/offer-02-1x.png"
+                  alt="image"
+                  width="280"
+                  height="200"
+              /></picture>
+              <h3 class="offer-name">
+                Персональное сопровождение и наставничество для вас и вашей
+                семьи
+              </h3>
+              <div class="offer-time-container">
+                <div class="time-wrapper">
+                  <p class="time">[ 3 / 6 / 12 месяцев ]</p>
+                </div>
+              </div>
+              <p class="offer-text">
+                Представьте, что на протяжении целого года я буду сопровождать
+                вас и ваших близких, помогая вам преодолевать любые трудности и
+                гармонизировать вашу жизнь. Это эксклюзивный формат, который
+                включает годовой прогноз и ежемесячные чек-апы
+              </p>
+              <p class="offer-desc">Цена за:</p>
+              <ul class="offers-price-list">
+                <li class="price-item">3 месяца: <span>$1,900</span></li>
+                <li class="price-item">6 месяцев: <span>$3,900</span></li>
+                <li class="price-item">12 месяцев: <span>$6,900</span></li>
+              </ul>
+              <a class="buy-btn" href=""
+                >купить
+                <img src="./src/img/offers/buy-btn-arrow.svg" alt="arrow"
+              /></a>
+              <p class="about-this-offer">
+                Люди, выбравшие этот путь, остаются со мной на долгие годы — и я
+                буду рада видеть вас в их числе
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/offers/offer-03-1x.png 1x,
+                    ./src/img/offers/offer-03-2x.png 2x
+                  " />
+                <img
+                  class="offer-image"
+                  src="./src/img/offers/offer-03-1x.png"
+                  alt="image"
+                  width="280"
+                  height="200"
+              /></picture>
+              <h3 class="offer-name">Консультации</h3>
+              <div class="offer-time-container">
+                <div class="time-wrapper">
+                  <p class="time">[ от 30 до 90 минут ]</p>
+                </div>
+              </div>
+              <p class="offer-text">
+                Если вы стремитесь к глубинному пониманию себя и своих жизненных
+                путей, мои персональные консультации помогут вам раскрыть новые
+                горизонты и обрести ясность в самых важных вопросах
+              </p>
+              <p class="offer-desc">Цена за:</p>
+              <ul class="consultations-list">
+                <li class="consultations-item">
+                  <div class="box">
+                    <p class="text">
+                      Ознакомительная консультация <span>(до 30 минут):</span>
+                    </p>
+                    <div class="price-box">
+                      <p class="cons-price old-price">$300</p>
+                      <p class="cons-price new-price">$149</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="consultations-item">
+                  <div class="box">
+                    <p class="text">
+                      Плановая консультация
+                      <span>(до 45 минут, + 3 часа подготовки):</span>
+                    </p>
+                    <div class="price-box">
+                      <p class="cons-price old-price">$1,000</p>
+                      <p class="cons-price new-price">$490</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="consultations-item">
+                  <div class="box">
+                    <p class="text">
+                      Полная консультация с прогнозом на 3-6 месяцев
+                      <span>(90 минут + 5 часов подготовки):</span>
+                    </p>
+                    <div class="price-box">
+                      <p class="cons-price old-price">$3,000</p>
+                      <p class="cons-price new-price">$1,500</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a class="buy-btn" href=""
+                >купить
+                <img src="./src/img/offers/buy-btn-arrow.svg" alt="arrow"
+              /></a>
+              <p class="about-this-offer">
+                Эти консультации — это не просто советы, это настоящий путь к
+                вашей новой жизни
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/offers/offer-04-1x.png 1x,
+                    ./src/img/offers/offer-04-2x.png 2x
+                  " />
+                <img
+                  class="offer-image"
+                  src="./src/img/offers/offer-04-1x.png"
+                  alt="image"
+                  width="280"
+                  height="200"
+              /></picture>
+              <h3 class="offer-name">
+                Абонемент на доступ ко всем моим курсам
+              </h3>
+              <div class="offer-time-container">
+                <div class="time-wrapper">
+                  <p class="time">[ 12 месяцев ]</p>
+                </div>
+              </div>
+              <p class="offer-text">
+                Я собрала для вас самое ценное — сотни уроков, разработанных
+                мной за 8 лет практики. Эти знания помогут вам не только
+                гармонизировать все сферы вашей жизни, но и стать настоящим
+                мастером астрологии
+              </p>
+              <p class="offer-desc">Специальная цена:</p>
+              <div class="special-price-box">
+                <p class="special-text">За годовой доступ</p>
+                <p class="special-price">$2,900</p>
+              </div>
+              <a class="buy-btn" href=""
+                >купить
+                <img src="./src/img/offers/buy-btn-arrow.svg" alt="arrow"
+              /></a>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/offers/offer-05-1x.png 1x,
+                    ./src/img/offers/offer-05-2x.png 2x
+                  " />
+                <img
+                  class="offer-image"
+                  src="./src/img/offers/offer-05-1x.png"
+                  alt="image"
+                  width="280"
+                  height="200"
+              /></picture>
+              <h3 class="offer-name">
+                Абонемент на все будущие курсы до конца 2025 года
+              </h3>
+              <div class="offer-time-container">
+                <div class="time-wrapper">
+                  <p class="time">[ 14 месяцев ]</p>
+                </div>
+              </div>
+              <p class="offer-text">
+                Здесь вы получите доступ ко всему новому, что я создам за эти
+                годы — от новых курсов до годовых прогнозов и эксклюзивного
+                участия в АстроКлубе и Родовых практиках
+              </p>
+              <div class="special-price-box">
+                <p class="special-text">Цена для вас:</p>
+                <p class="special-price">$2,900</p>
+              </div>
+              <a class="buy-btn" href=""
+                >купить
+                <img src="./src/img/offers/buy-btn-arrow.svg" alt="arrow"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="not-all section">
+        <div class="container">
+          <h2 class="not-all-title">И это еще не всё!</h2>
+          <div class="not-all-container">
+            <p class="not-all-text">
+              При покупке любого лота сегодня вы получите
+              <span>секретный подарок</span> — сюрприз, который я приготовила
+              специально для вас.
+            </p>
+            <p class="not-all-text">
+              Эти предложения — шанс изменить вашу жизнь, и я буду рада
+              сопровождать вас на этом пути
+            </p>
+          </div>
+          <div class="not-all-wrapper">
+            <p class="text">
+              Успейте воспользоваться <br />
+              этими уникальными возможностями
+              <span>до 23 октября!</span>
+            </p>
+            <p class="love">
+              С любовью, <br />
+              <span>Ваша Виктория</span>
+            </p>
+            <picture
+              ><source
+                srcset="
+                  ./src/img/footer/not-all-img-1x.png 1x,
+                  ./src/img/footer/not-all-img-2x.png 2x
+                " />
+              <img
+                class="not-all-image"
+                src="./src/img/footer/not-all-img-1x.png"
+                alt="feather"
+                width="auto"
+                height="auto"
+            /></picture>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
   </body>
 </html>
