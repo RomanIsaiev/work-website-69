@@ -140,7 +140,7 @@
 
   padding: 30px 34px;
   max-width: 281px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   width: 100%;
   height: 194px;
 }
@@ -186,6 +186,57 @@
 
   padding-left: 24px;
   margin-top: -21px;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-time {
+  display: block;
+  color: #ebd9ab;
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 50px;
+}
+
+.countdown-doubledot {
+  content: '';
+  display: flex;
+  height: 30px;
+  width: 1px;
+  background: #ebd9ab;
+  margin: 0 auto;
+}
+
+.countdown-label {
+  color: #ebd9ab;
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  margin-top: -6px;
 }
 
 /* offers */
@@ -398,6 +449,10 @@
   letter-spacing: -0.13px;
 }
 
+.tariff-selector label span {
+  color: #9c9c9c;
+}
+
 .consul-selector-title {
   color: #a78653;
   text-align: center;
@@ -432,6 +487,10 @@
   font-weight: 400;
   line-height: 120%; /* 15.6px */
   letter-spacing: -0.13px;
+}
+
+.consul-selector label span {
+  color: #9c9c9c;
 }
 
 input[type='radio'] {
@@ -470,8 +529,15 @@ input[type='radio']:checked {
   line-height: 100%; /* 16px */
   letter-spacing: -0.32px;
   text-transform: uppercase;
+}
 
+.buy-btn.anim {
   animation: pulseScale 2000ms infinite;
+}
+
+.buy-btn.disabled {
+  background: #9c9c9c;
+  pointer-events: none;
 }
 
 .offers-price-list {

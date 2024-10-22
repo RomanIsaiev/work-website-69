@@ -53,6 +53,22 @@
             </p>
             <span class="desc-personal">от меня лично</span>
           </div>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+              <div class="countdown-label hours-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="offers section">
@@ -96,14 +112,7 @@
                 <p class="special-text">Специальная цена для вас:</p>
                 <p class="special-price">$9,900</p>
               </div>
-              <a
-                class="buy-btn"
-                href="https://secure.wayforpay.com/button/bf6f39a80678d"
-                target="_blank"
-                rel="nofollow"
-                >купить
-                <img src="./src/img/offers/buy-btn-arrow.svg" alt="arrow"
-              /></a>
+              <a class="buy-btn disabled">Sold out </a>
             </li>
             <li class="list-item">
               <picture
@@ -148,27 +157,37 @@
                       type="radio"
                       name="personal-tariff"
                       value="3month"
-                      checked
-                    />3 месяца
+                      disabled
+                    />
+                    <p>
+                      3 месяца <br />
+                      <span>sold out</span>
+                    </p>
                   </label>
                   <label
                     ><input
                       type="radio"
                       name="personal-tariff"
                       value="6month"
-                    />6 месяцев
+                      disabled
+                    />
+                    <p>
+                      6 месяцев <br />
+                      <span>sold out</span>
+                    </p>
                   </label>
                   <label
                     ><input
                       type="radio"
                       name="personal-tariff"
                       value="12month"
+                      checked
                     />12 месяцев
                   </label>
                 </form>
               </div>
               <a
-                class="buy-btn"
+                class="buy-btn anim"
                 href="https://secure.wayforpay.com/button/b304ad35f47b0"
                 id="buyLink"
                 target="_blank"
@@ -252,27 +271,37 @@
                       type="radio"
                       name="personal-consul"
                       value="consul1"
-                      checked
-                    />Ознакомительная консультация
+                      disabled
+                    />
+                    <p>
+                      Ознакомительная консультация <br />
+                      <span>sold out</span>
+                    </p>
                   </label>
                   <label
                     ><input
                       type="radio"
                       name="personal-consul"
                       value="consul2"
-                    />Плановая консультация
+                      disabled
+                    />
+                    <p>
+                      Плановая консультация <br />
+                      <span>sold out</span>
+                    </p>
                   </label>
                   <label
                     ><input
                       type="radio"
                       name="personal-consul"
                       value="consul3"
+                      checked
                     />Полная консультация
                   </label>
                 </form>
               </div>
               <a
-                class="buy-btn"
+                class="buy-btn anim"
                 href="https://secure.wayforpay.com/button/bbe2dc0f6e367"
                 id="buyLinkConsul"
                 target="_blank"
@@ -359,7 +388,7 @@
                 <p class="special-price">$2,900</p>
               </div>
               <a
-                class="buy-btn"
+                class="buy-btn anim"
                 href="https://secure.wayforpay.com/button/b6116baf77867"
                 target="_blank"
                 rel="nofollow"
@@ -412,5 +441,6 @@
       </section>
     </main>
     <script src="./src/js/selector.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
   </body>
 </html>
